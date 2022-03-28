@@ -26,7 +26,7 @@ function ProductsContainer(props) {
       result = products.map((product, index) => {
         return (
           <Product
-            key={index}
+            key={product.id}
             product={product}
             onAddToCart={onAddToCart}
             onChangeMessage={onChangeMessage}

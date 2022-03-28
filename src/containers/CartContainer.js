@@ -74,7 +74,7 @@ CartContainer.propTypes = {
 
       quanlity: PropTypes.number.isRequired,
     })
-  ).isRequired,
+  ),
 };
 
 export default CartContainer;
