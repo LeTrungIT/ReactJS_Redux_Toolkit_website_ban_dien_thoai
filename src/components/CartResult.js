@@ -3,10 +3,10 @@ import React from "react";
 function CartResult(props) {
   const { cart } = props;
   const showTotalValue = (cart) => {
-    let result = 0;
-    for (var i = 0; i < cart.length; i++) {
-      result += cart[i].product.price * cart[i].quanlity;
-    }
+    const result=cart.reduce((total, cartElement)=>{
+      return total+cartElement.product.price*cartElement.quanlity;
+
+    },0);
     return result.toLocaleString();
   };
   return (
