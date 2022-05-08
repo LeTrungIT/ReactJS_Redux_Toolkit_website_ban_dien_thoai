@@ -1,17 +1,17 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import PropTypes from "prop-types";
-import Message from "./../components/Message";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
+import Message from './../components/Message';
 
 function MessageContainer(props) {
-  const message = useSelector((state) => state.messages);
-  return <Message message={message} />;
+    const message = useSelector((state) => state.messages);
+    return <Message message={message} />;
 }
 MessageContainer.propTypes = {
-  messsage: PropTypes.string,
+    messsage: PropTypes.string,
 };
 MessageContainer.defaultProps = {
-  message: "",
+    message: '',
 };
 
 export default MessageContainer;
