@@ -1,1 +1,10 @@
-/* YOUR CUSTOM STYLES */
+.project__title {
+    font-size: 3rem;
+    color: black;
+    font-weight: 500;
+    margin: 22px 0;
+}
+.product-price {
+    color: red;
+    margin-left: 20px;
+}

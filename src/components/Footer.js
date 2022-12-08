@@ -6,7 +6,7 @@ function Footer() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-2 ml-auto">
-                        <h5 className="title social-section-title">Social Media</h5>
+                        <h5 className="title social-section-title">Mạng xã hội</h5>
                         <div className="social-section text-md-left">
                             <ul className="text-center">
                                 <li>
@@ -53,36 +53,36 @@ function Footer() {
                         </div>
                     </div>
                     <div className="col-lg-2">
-                        <h5 className="title">Delivery</h5>
+                        <h5 className="title">Giao hàng</h5>
                         <ul>
                             <li>
-                                <a>Store Delivery</a>
+                                <a>Giao hàng trực tiếp</a>
                             </li>
                             <li>
-                                <a>Online Delivery</a>
+                                <a>Giao hàng trực tuyến</a>
                             </li>
                             <li>
-                                <a>Delivery Terms &amp; Conditions</a>
+                                <a>Chính sách &amp; điều khoản giao hàng</a>
                             </li>
                             <li>
-                                <a>Tracking</a>
+                                <a>Theo dõi</a>
                             </li>
                         </ul>
                     </div>
                     <div className="col-lg-2">
-                        <h5 className="title">Need help?</h5>
+                        <h5 className="title">Trợ giúp</h5>
                         <ul>
                             <li>
-                                <a>FAQ</a>
+                                <a>Hỏi đáp</a>
                             </li>
                             <li>
-                                <a>Contact Us</a>
+                                <a>Liên hệ</a>
                             </li>
                             <li>
-                                <a>Return Policy</a>
+                                <a>Chính sách trả hàng</a>
                             </li>
                             <li>
-                                <a>Product Registration</a>
+                                <a>Đăng ký sản phẩm</a>
                             </li>
                         </ul>
                     </div>
@@ -90,8 +90,8 @@ function Footer() {
             </div>
             <div className="footer-copyright">
                 <div className="container-fluid">
-                    © 2021 Copyright:
-                    <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
+                    © 2022 Copyright:
+                    <a href="http://www.MDBootstrap.com"> </a>
                 </div>
             </div>
         </footer>

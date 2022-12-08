@@ -1,5 +1,5 @@
 import React from 'react';
-import * as message from './../constants/Message';
+import * as message from '../../constants/Message';
 
 function Product(props) {
     const { product } = props;
@@ -39,7 +39,7 @@ function Product(props) {
                     </ul>
                     <p className="card-text">{product.describe}</p>
                     <div className="card-footer">
-                        <span className="left">{product.price.toLocaleString()} VNĐ</span>
+                        <span className="left product-price">{product.price.toLocaleString()} VNĐ</span>
                         <span className="right">
                             <label
                                 className="btn-floating blue-gradient"

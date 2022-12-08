@@ -1,15 +1,21 @@
-import React from 'react';
-import Product from './../components/Product';
+import React, { useEffect } from 'react';
+import Product from '../components/Product/Product';
 import Products from './../components/Products';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { ADD_TO_CART } from '../features/Slice/cartSlice';
 import { SHOW_MESSAGE } from '../features/Slice/messageSlice';
 import { useDispatch } from 'react-redux';
+import { FETCH_DATA_REQUEST } from '../features/Slice/productSlice';
 
 function ProductsContainer(props) {
-    const products = useSelector((state) => state.products);
+    const products = useSelector((state) => state.products.data);
+
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(FETCH_DATA_REQUEST());
+    }, []);
 
     const onAddToCart = (product) => {
         const action = ADD_TO_CART(product);

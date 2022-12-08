@@ -261,9 +261,10 @@ function Header() {
                 <ul className="nav navbar-nav nav-flex-icons ml-auto">
                     <li className="nav-item dropdown">
                         <a
+                            href="./"
                             className="nav-link dropdown-toggle waves-effect waves-light"
                             id="dropdownMenu1"
-                            data-toggle="dropdown"
+                            dataToggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                         >
