@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function CartResult(props) {
-    const { cart } = props;
+function CartResult({ cart }) {
     const showTotalValue = (cart) => {
         const result = cart.reduce((total, cartElement) => {
             return total + cartElement.product.price * cartElement.quanlity;
@@ -30,5 +30,7 @@ function CartResult(props) {
         </tr>
     );
 }
-
+CartResult.propTypes = {
+    cart: PropTypes.array.isRequired,
+};
 export default CartResult;

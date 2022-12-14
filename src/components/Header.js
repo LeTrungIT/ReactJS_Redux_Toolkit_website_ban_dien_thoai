@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 function Header() {
@@ -265,8 +266,8 @@ function Header() {
                             className="nav-link dropdown-toggle waves-effect waves-light"
                             id="dropdownMenu1"
                             datatoggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
+                            ariahaspopup="true"
+                            ariaexpanded="false"
                         >
                             <i className="fa fa-user"></i> Tài Khoản
                         </a>

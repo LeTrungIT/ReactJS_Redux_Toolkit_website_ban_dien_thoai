@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import * as message from '../../constants/Message';
 
 function Product({ product, onAddToCart, onChangeMessage }) {
@@ -22,14 +24,14 @@ function Product({ product, onAddToCart, onChangeMessage }) {
             <div className="card text-center card-cascade narrower">
                 <div className="view overlay hm-white-slight z-depth-1">
                     <img src={product.image} className="img-fluid" alt={product.name} />
-                    <a>
+                    <a href="/">
                         <div className="mask waves-light waves-effect waves-light"></div>
                     </a>
                 </div>
                 <div className="card-body">
                     <h4 className="card-title">
                         <strong>
-                            <a>{product.name}</a>
+                            <a href="/">{product.name}</a>
                         </strong>
                     </h4>
                     <ul className="rating">
@@ -55,4 +57,10 @@ function Product({ product, onAddToCart, onChangeMessage }) {
         </div>
     );
 }
+Product.propTypes = {
+    product: PropTypes.object.isRequired,
+    onAddToCart: PropTypes.func,
+    onChangeMessage: PropTypes.func,
+};
+
 export default Product;

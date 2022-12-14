@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Cart(props) {
+function Cart({ children }) {
     return (
         <section className="section">
             <div className="table-responsive">
@@ -15,11 +16,14 @@ function Cart(props) {
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>{props.children}</tbody>
+                    <tbody>{children}</tbody>
                 </table>
             </div>
         </section>
     );
 }
+Cart.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default Cart;

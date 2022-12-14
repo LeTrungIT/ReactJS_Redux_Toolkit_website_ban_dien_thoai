@@ -1,16 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import * as typeMessage from './../constants/Message';
 
-function CartItem(props) {
-    const { item } = props;
+function CartItem({ item, onUpdateProductInCart, onDeleteProductInCart, onChangeMessage }) {
     const { quanlity } = item;
     const handleUpdateQuanlity = (product, quanlity) => {
-        const { onUpdateProductInCart, onChangeMessage } = props;
         onUpdateProductInCart(product, quanlity);
         onChangeMessage(typeMessage.MSG_UPDATE_CART_SUCCESS);
     };
     const deleteProductInCart = (product) => {
-        const { onDeleteProductInCart, onChangeMessage } = props;
         onDeleteProductInCart(product);
         onChangeMessage(typeMessage.MSG_DELETE_PRODUCT_SUCCESS);
     };
@@ -21,7 +21,7 @@ function CartItem(props) {
     return (
         <tr>
             <th scope="row">
-                <img src={item.product.image} />
+                <img src={item.product.image} alt="Điện thoại" />
             </th>
             <td>
                 <h5>
@@ -65,5 +65,10 @@ function CartItem(props) {
         </tr>
     );
 }
-
+CartItem.propTypes = {
+    item: PropTypes.object.isRequired,
+    onUpdateProductInCart: PropTypes.func,
+    onDeleteProductInCart: PropTypes.func,
+    onChangeMessage: PropTypes.func,
+};
 export default CartItem;

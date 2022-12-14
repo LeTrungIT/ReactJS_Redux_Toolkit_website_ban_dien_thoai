@@ -7,7 +7,7 @@ import Cart from './../components/Cart';
 import { DELETE_PRODUCT_IN_CART, UPDATE_PRODUCT_IN_CART } from '../features/Slice/cartSlice';
 import { SHOW_MESSAGE } from '../features/Slice/messageSlice';
 
-function CartContainer(props) {
+function CartContainer() {
     const cart = useSelector((state) => state.carts);
     const dispatch = useDispatch();
 

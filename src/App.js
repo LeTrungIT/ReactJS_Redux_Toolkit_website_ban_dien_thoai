@@ -7,7 +7,7 @@ import CartContainer from './containers/CartContainer';
 
 function App(props) {
     return (
-        <React.Fragment>
+        <>
             <Header />
             <main id="mainContainer">
                 <div className="container">
@@ -17,7 +17,7 @@ function App(props) {
                 </div>
             </main>
             <Footer />
-        </React.Fragment>
+        </>
     );
 }
 

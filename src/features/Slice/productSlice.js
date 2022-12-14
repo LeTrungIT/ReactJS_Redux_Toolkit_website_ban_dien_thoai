@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import * as request from '../../utils/request';
+import * as htmlrequest from '../../utils/htmlrequest';
 
 export const productSlice = createSlice({
     name: 'products',
@@ -18,7 +18,7 @@ export const productSlice = createSlice({
 });
 
 export const FETCH_DATA_REQUEST = createAsyncThunk('products/fetchProducts', async () => {
-    const res = request.get('products');
+    const res = htmlrequest.get('products');
     return res;
 });
 
