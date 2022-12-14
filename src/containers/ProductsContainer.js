@@ -15,6 +15,7 @@ function ProductsContainer(props) {
 
     useEffect(() => {
         dispatch(FETCH_DATA_REQUEST());
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onAddToCart = (product) => {

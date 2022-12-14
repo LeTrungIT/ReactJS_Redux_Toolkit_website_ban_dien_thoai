@@ -1,8 +1,7 @@
 import React from 'react';
 import * as message from '../../constants/Message';
 
-function Product(props) {
-    const { product } = props;
+function Product({ product, onAddToCart, onChangeMessage }) {
     const star = product.star;
     const showStar = () => {
         const result = [];
@@ -15,7 +14,6 @@ function Product(props) {
         return result;
     };
     const handleAddToCart = (product) => {
-        const { onAddToCart, onChangeMessage } = props;
         onAddToCart(product);
         onChangeMessage(message.MSG_ADD_TO_CART_SUCCESS);
     };

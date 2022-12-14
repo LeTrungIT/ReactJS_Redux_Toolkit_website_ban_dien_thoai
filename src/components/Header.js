@@ -264,7 +264,7 @@ function Header() {
                             href="./"
                             className="nav-link dropdown-toggle waves-effect waves-light"
                             id="dropdownMenu1"
-                            dataToggle="dropdown"
+                            datatoggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                         >
